@@ -1,0 +1,28 @@
+.card {
+  width: 300px;
+  border: 1px solid #eee;
+}
+
+.card > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card > h1 {
+  color: rgb(63, 63, 63);
+}
+
+.card > p {
+  margin: 1rem 0;
+  color: #afafaf;
+}
+
+.card > button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
