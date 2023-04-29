@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={style.app}>
       <Navbar />
       <Feed />
       <h1>Lets Start UseEffect</h1>

@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./CardContainer.module.css";
 import Card from "./Card";
+import Modal from "../UI/Modal/Modal";
 
 const CardContainer = () => {
+  const [showModal, setShowModal] = useState(false);
   const data = [
     {
       title: "Title 1",
@@ -67,6 +69,7 @@ const CardContainer = () => {
       {data.map((item, index) => (
         <Card key={index} img={item.img} title={item.title} desc={item.desc} />
       ))}
+      {showModal && <Modal closeModal={setShowModal}></Modal>}
     </div>
   );
 };
